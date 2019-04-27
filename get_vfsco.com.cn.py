@@ -38,5 +38,5 @@ def crawl(url):
 
 if __name__ == '__main__':
     # ensure there's one subfolder called 'download' in same path, to store the image downloaded
-    url = 'http://www.vfsco.com.cn'
+    url = 'https://www.vfsco.com.cn'
     crawl(url)
