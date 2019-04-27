@@ -4,9 +4,9 @@ import requests
 from lxml import html
 
 headers = {
-    'Host': 'www.vfsco.net.cn',
+    'Host': 'www.zhihu.com',
     'Accept-Language': 'zh-CN,zh;q=0.8,en;q=0.6',
-    'Accept-Encoding': 'gzip, deflate, sdch, br',
+    # 'Accept-Encoding': 'gzip, deflate, sdch, br',
     'Connection': 'keep-alive',
     'Pragma': 'no-cache',
     'Cache-Control': 'no-cache',
@@ -25,7 +25,7 @@ def save(text, filename='temp', path='download'):
 def save_image(image_url):
     resp = requests.get(image_url)
     page = resp.content
-    filename = image_url.split('vfsco.com.cn/')[-1]
+    filename = image_url.split('zhimg.com/')[-1]
     save(page, filename)
 
 def crawl(url):
@@ -38,5 +38,5 @@ def crawl(url):
 
 if __name__ == '__main__':
     # ensure there's one subfolder called 'download' in same path, to store the image downloaded
-    url = 'https://www.vfsco.com.cn'
+    url = 'https://www.zhihu.com/question/27364360'
     crawl(url)
