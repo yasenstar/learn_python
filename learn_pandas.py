@@ -18,3 +18,7 @@ print(df)
 df = df.append(pd.DataFrame({'numbers': 100, 'floats': 5.75, 'names': 'Henry'}, index=['z']))
 
 print(df)
+
+df=df.join(pd.DataFrame([1, 4, 9, 16, 25], index = ['a', 'b', 'c', 'd', 'y'], columns = ['squares',]))
+
+print(df)
