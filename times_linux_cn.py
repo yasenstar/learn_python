@@ -1,6 +1,7 @@
+# -*- coding: utf-8 -*-
 import sys
 import random
-print("Play on Times for up to 10")
+print("10以内（含10）的乘法练习").decode('UTF-8').encode(type)
 k=1
 count=0
 correct=0
@@ -12,41 +13,41 @@ while want_to_quit != 1:
         a = int(round(random.random()*10,0))
         b = int(round(random.random()*10,0))
 
-        print("Please try", a, " x ", b, " = ?")
+        print("请计算：", a, " x ", b, " = ?").decode('UTF-8').encode(type)
         if int(input()) == a * b:
-            print("Correct!\n")
+            print("正确\n")
             k=1
             count = count + 1
             if first_time_correct == 1:
                 correct=correct+1
             first_time_correct = 1
             if count % 5 == 0:
-                print("continue? (y or n)")
+                print("继续?(y or n)").decode('UTF-8').encode(type)
                 if input() == "n":
                     want_to_quit = 1
                     exit
         else:
-            print("Try again...")
+            print("再想想").decode('UTF-8').encode(type)
             k=0
             first_time_correct = 0
 
     else:
 
-        print("Please try", a, " x ", b, " = ?")
+        print("请计算：", a, " x ", b, " = ?")
         if int(input()) == a * b:
-            print("Correct!")
+            print("正确")
             k=1
             count = count + 1
             if first_time_correct == 1:
                 correct=correct+1
             first_time_correct = 1
             if count % 5 == 0:
-                print("Continue? (y or n)")
+                print("继续?(y or n)")
                 if input() == "n":
                     want_to_quit = 1
                     exit                   
         else:
-            print("Try again...")
+            print("再想想")
             k=0
             first_time_correct = 0
-print("Total: ",count, ", # of correct are: ",correct,", Correction Rate is",round(correct/count,3)*100,"%, Great Job!")
+print("共做了",count, "题，正确答对了",correct,"题，正确率达到：",round(correct/count,3)*100,"%,祝贺")
