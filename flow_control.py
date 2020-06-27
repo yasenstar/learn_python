@@ -61,3 +61,73 @@
 #     print(os.getlogin(), "dogyear = ", dogyear, "manyear= ", manyear)
 # else:
 #     print("还没出生呢。。。")
+
+# # 求100以内所以的奇数之和
+# i = 0
+# total = 0
+# while i <= 100:
+#     if i % 2 != 0:
+#         total += i
+#     i += 1
+# print("一百以内的所有奇数之和是： ", total)
+
+# # 求100以内的所有7的倍数之和，以及个数
+# i = 0
+# count = 0
+# total = 0
+# while i <= 100:
+#     if i % 7 == 0:
+#         count += 1
+#         total += i
+#     i += 1
+# print ("一百以内的所有7的倍数的和是 ", total)
+# print (" 共有 ", count, "个")
+
+# # 水仙花数 Narcissistic Number 是指一个n位数（n>=3），其每位上的数字的n次幂之和等于它本身，求输入范围内的所有水仙花数
+# i = 0
+# max_num = int(input("请输入一个任意正整数： "))
+# while i <= max_num:
+#     if 100 <= i < 1000:
+#         a = 3
+#         if (i // 100 ) ** a + ((i % 100) // 10) ** a + (i % 10) ** a == i:
+#             print (i)
+#     i += 1
+
+# # 判断是否是质数，即除了1和它自身以外，不能被其他自然数整除的数
+# num = int(input("请给一个数来判断是否是质数(大于0的自然数)： "))
+# i = 2
+# a = 0
+# while i < num:
+#     if (num % i) == 0:
+#         print ("不是质数")
+#         a = i
+#         i = num
+#     i += 1
+# else:
+#     if a==0: print ("是质数")
+
+# # 九九乘法表
+# a = 1
+# b = 1
+# while a <= 9:
+#     while b <= 9:
+#         print (a, "x", b, "=", a*b)
+#         b += 1
+#     a += 1
+#     b = a
+
+# # 列出一定范围内的所有质数
+# num = int(input("请给一个数作为范围(大于0的自然数)： "))
+# x = 1
+# while x <= num:
+#     i = 2
+#     a = 0
+#     while i < x:
+#         if (x % i) == 0:
+#             # print ("不是质数")
+#             a = i
+#             i = x
+#         i += 1
+#     else:
+#         if a==0: print (x,"是质数")
+#     x += 1
