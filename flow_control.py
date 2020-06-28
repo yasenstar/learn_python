@@ -106,6 +106,19 @@
 # else:
 #     if a==0: print ("是质数")
 
+# # 判断是否是质数，即除了1和它自身以外，不能被其他自然数整除的数 （老师的代码）2020-06-27
+# num = int(input("输入一个任意的大于1的整数： "))
+# i = 2
+# flag = True
+# while i < num:
+#     if num % i == 0:
+#         flag = False
+#     i += 1
+# if flag:
+#     print(num, "是质数")
+# else:
+#     print(num, "不是质数")
+
 # # 九九乘法表
 # a = 1
 # b = 1
