@@ -130,16 +130,16 @@
 #     a += 1
 #     b = 1
 
-# 九九乘法表 （老师的做法）
-a = 1
-b = 1
-while a <= 9:
-    while b <= a:
-        print (b, "x", a, "=", a*b, " ", end="")
-        b += 1
-    print()
-    a += 1
-    b = 1
+# # 九九乘法表 （老师的做法）
+# i = 0
+# while i < 0:
+#     i += 1
+#     j = 0
+#     while j < i:
+#         j += i
+#         print(f"{j}*{i}={i*j} ", end="")    
+#     print()
+
 
 # # 列出一定范围内的所有质数
 # num = int(input("请给一个数作为范围(大于0的自然数)： "))
