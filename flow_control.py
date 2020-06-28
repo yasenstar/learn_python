@@ -141,18 +141,18 @@
 #     print()
 
 
-# 列出一定范围内的所有质数
-num = int(input("请给一个数作为范围(大于0的自然数)： "))
-x = 1
-while x <= num:
-    i = 2
-    a = 0
-    while i < x:
-        if (x % i) == 0:
-            # print ("不是质数")
-            a = i
-            i = x
-        i += 1
-    else:
-        if a==0: print (x,"是质数")
-    x += 1
+# # 列出一定范围内的所有质数
+# num = int(input("请给一个数作为范围(大于0的自然数)： "))
+# x = 1
+# while x <= num:
+#     i = 2
+#     a = 0
+#     while i < x:
+#         if (x % i) == 0:
+#             # print ("不是质数")
+#             a = i
+#             i = x
+#         i += 1
+#     else:
+#         if a==0: print (x,"是质数")
+#     x += 1
