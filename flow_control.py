@@ -156,3 +156,18 @@
 #     else:
 #         if a==0: print (x,"是质数")
 #     x += 1
+
+# 列出100内的所有质数 (老师的做法)
+i = 2
+while i <= 100:
+    flag = True
+    j = 2
+    while j < i:
+        if (i % j) == 0:
+            # print ("不是质数")
+            flag = False
+        j += 1
+    if flag:
+        print(i, " ", end="")
+    i += 1
+print()
