@@ -119,15 +119,16 @@
 # else:
 #     print(num, "不是质数")
 
-# # 九九乘法表
-# a = 1
-# b = 1
-# while a <= 9:
-#     while b <= 9:
-#         print (a, "x", b, "=", a*b)
-#         b += 1
-#     a += 1
-#     b = a
+# 九九乘法表
+a = 1
+b = 1
+while a <= 9:
+    while b <= a:
+        print (b, "x", a, "=", a*b, " ", end="")
+        b += 1
+    print()
+    a += 1
+    b = 1
 
 # # 列出一定范围内的所有质数
 # num = int(input("请给一个数作为范围(大于0的自然数)： "))
