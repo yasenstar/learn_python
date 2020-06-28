@@ -119,7 +119,18 @@
 # else:
 #     print(num, "不是质数")
 
-# 九九乘法表
+# # 九九乘法表
+# a = 1
+# b = 1
+# while a <= 9:
+#     while b <= a:
+#         print (b, "x", a, "=", a*b, " ", end="")
+#         b += 1
+#     print()
+#     a += 1
+#     b = 1
+
+# 九九乘法表 （老师的做法）
 a = 1
 b = 1
 while a <= 9:
