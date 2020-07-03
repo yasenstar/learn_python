@@ -75,7 +75,9 @@ while True:
             break
 
     elif game_choose == "3":
-        pass
+        # 逃跑，退出游戏
+        print("唐僧一扭头就跑了")
+        break
     else:
-        pass
+        print("你的输入有误，请重新输入")
 
