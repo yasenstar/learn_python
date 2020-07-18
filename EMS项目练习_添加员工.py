@@ -81,7 +81,7 @@ while True:
         # 判断
         if user_confirm == "y" or user_confirm == 'yes':
             # 确认
-            emp.delete(tobe_delete-1)
+            emp.pop(tobe_delete-1)
             print('删除成功')
         else:
             print('删除已取消')
