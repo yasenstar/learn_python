@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Find minimum LOSS
+v0.1: due to too large loop, cannot complete calculating
 """
 
 repo = [0, 0, 1, 1, 1]
