@@ -1,5 +1,5 @@
-# 20200716 Turtle Practice
-
+# Turtle Practice
+Date: 20200716
 ## A Rectangle
 
 Drawing a rectangle is almost exactly the same as drawing a square, except that the turtle needs to draw two sides that are longer than the other two:

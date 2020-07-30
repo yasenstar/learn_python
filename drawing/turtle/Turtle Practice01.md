@@ -1,4 +1,5 @@
-# 20200714 Learn Turtle in Python
+# Learn Turtle in Python
+date： 2020-07-14
 
 Open Python through terminal, by typing `python3`, enter.
 
